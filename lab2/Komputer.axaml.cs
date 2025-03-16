@@ -52,9 +52,9 @@ public partial class Komputer : Window {
             if (button.Content.ToString() == "OK") {
                 main_window.cena_procesora = procesor;
                 main_window.cena_dysku = dysk;
+                this.Hide();
                 main_window.cena_komputera = main_window.cena_procesora + main_window.cena_dysku + main_window.cena_monitora;
                 main_window.cena.InnerRightContent = main_window.cena_komputera;
-                this.Hide();
             }
             else if (button.Content.ToString() == "anuluj") {
                 this.Hide();

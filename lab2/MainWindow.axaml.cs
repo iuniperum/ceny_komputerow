@@ -22,19 +22,23 @@ public partial class MainWindow : Window
         cena_komputera += cena;
     }
     
-    public void klik(object sender, RoutedEventArgs args)
-    {
+    public void klik(object sender, RoutedEventArgs args) {
         cena.InnerRightContent = "0";
         if (sender is Button button) {
-            if (button.Content.ToString() == "Komputer")
-            {
+            if (button.Content.ToString() == "Komputer") {
                 kp = new Komputer(this);
                 kp.Show();
             }
-            else if (button.Content.ToString() == "Monitor") {
+            if (button.Content.ToString() == "Monitor") {
                 mt = new Monitor(this);
                 mt.Show();
             }
         }
+    }
+
+    public void finalna_cena()
+    {
+        cena_komputera = cena_procesora + cena_dysku + cena_monitora;
+        cena.InnerRightContent = cena_komputera.ToString();
     }
 }

@@ -20,7 +20,7 @@ public partial class Monitor : Window
     
     private void wybor_monitora(object sender, RoutedEventArgs args)
     {
-        if (dyski.SelectedItem is ListBoxItem item)
+        if (monitory.SelectedItem is ListBoxItem item)
         {
             if (item.Content is StackPanel panel)
             {
@@ -36,6 +36,7 @@ public partial class Monitor : Window
         if (sender is Button button) {
             if (button.Content.ToString() == "OK") {
                 main_window.cena_monitora = monitor;
+                main_window.cena_komputera = main_window.cena_procesora + main_window.cena_dysku + main_window.cena_monitora;
                 main_window.cena.InnerRightContent = main_window.cena_komputera;
                 this.Hide();
             }
