@@ -38,12 +38,12 @@
         <ComboBox Grid.Row="5" Grid.Column="1" Width="300" x:Name="procesory" HorizontalAlignment="Center" SelectionChanged="wybor_procesora">
             <ComboBoxItem>
                 <StackPanel>
-                    <TextBlock Text="procesor 1 - 1200 zł" Tag="1200"/>
+                    <TextBlock Text="procesor 1 - 700 zł" Tag="700"/>
                 </StackPanel>
             </ComboBoxItem>
             <ComboBoxItem>
                 <StackPanel>
-                    <TextBlock Text="procesor 2 - 1000 zł" Tag="1000"/>
+                    <TextBlock Text="procesor 2 - 800 zł" Tag="800"/>
                 </StackPanel>
             </ComboBoxItem>
             <ComboBoxItem>
@@ -79,7 +79,7 @@
         <TextBlock Grid.Row="10" Grid.Column="1"  ></TextBlock>
         
         <TextBlock Grid.Row="11" Grid.Column="1"  ></TextBlock>
-        <TextBlock Grid.Row="12" Grid.Column="1"  ></TextBlock>
+        <TextBox Grid.Row="12" Grid.Column="1" x:Name="reszta" ></TextBox>
         <TextBlock Grid.Row="13" Grid.Column="1"  ></TextBlock>
         <Button Grid.Row="14" Click="klik" Grid.Column="0" Margin="5" HorizontalAlignment="Center" Content="OK" HorizontalContentAlignment="Center" Padding="20"/>
         <Button Grid.Row="14" Click="klik" Grid.Column="2" Margin="5" HorizontalAlignment="Center" Content="anuluj" HorizontalContentAlignment="Center" Padding="20"/>

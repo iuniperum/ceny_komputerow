@@ -13,12 +13,18 @@ public partial class Komputer : Window {
 
     private double procesor = 0;
     private double dysk = 0;
+    private double reszt = 0;
+
     
     public Komputer(MainWindow okno) {
         InitializeComponent();
         main_window = okno;
     }
 
+    private void a() {
+        reszta.InnerRightContent = "reszta: 1000 zł";
+    }
+    
     private void wybor_procesora(object sender, RoutedEventArgs args)
     {
         if (procesory.SelectedItem is ComboBoxItem item)
@@ -28,6 +34,13 @@ public partial class Komputer : Window {
                 if (panel.Children[0] is TextBlock text)
                 {
                     procesor = Convert.ToDouble(text.Tag);
+                    reszt = 1000 - (procesor + dysk);
+                    if (reszt < 0) {
+                        reszta.InnerRightContent = "przekroczono budżet!";
+                    }
+                    else {
+                    reszta.InnerRightContent = "reszta: " + reszt.ToString() + " zł";
+                    }
                 }
             }
         }
@@ -42,6 +55,13 @@ public partial class Komputer : Window {
                 if (panel.Children[0] is TextBlock text)
                 {
                     dysk = Convert.ToDouble(text.Tag);
+                    reszt = 1000 - (procesor + dysk);
+                    if (reszt < 0) {
+                        reszta.InnerRightContent = "przekroczono budżet!";
+                    }
+                    else {
+                        reszta.InnerRightContent = "reszta: " + reszt.ToString() + " zł";
+                    }
                 }
             }
         }
