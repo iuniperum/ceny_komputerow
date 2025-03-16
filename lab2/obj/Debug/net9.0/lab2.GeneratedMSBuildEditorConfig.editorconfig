@@ -29,3 +29,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/hoda/RiderProjects/lab2/lab2/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/hoda/RiderProjects/lab2/lab2/Monitor.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -5,6 +5,7 @@
       <map>
         <entry key="lab2/Komputer.axaml" value="lab2/lab2.csproj" />
         <entry key="lab2/MainWindow.axaml" value="lab2/lab2.csproj" />
+        <entry key="lab2/Monitor.axaml" value="lab2/lab2.csproj" />
         <entry key="lab2/okno2.axaml" value="lab2/lab2.csproj" />
       </map>
     </option>
